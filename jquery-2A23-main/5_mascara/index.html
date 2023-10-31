@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução jQuery</title>
+    <!--Chamando biblioteca jQuery-->
+    <script type="text/javascript" src="jquery.js"></script>
+    <script src="https://rawgit.com/RobinHerbots/Inputmask/3.x/dist/jquery.inputmask.bundle.js
+    "></script>
+    <link rel="stylesheet" href="style.css">
+
+    <!--Funcionalidade da página-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#rg').inputmask('99.999.999-9');
+            $('#cpf').inputmask('999.999.999-99');
+            $('.fone').inputmask('(99) [9]9999-9999')
+        })
+
+    </script>
+</head>
+
+<body>
+
+    <form action="post">
+        Insira seu RG
+        <input id="rg" type="text" name="rg">
+        <br>
+        Insira seu CPF
+        <input id="cpf" type="text" name="cpf">
+        <br>
+        
+        Insira seu Telefone
+        <input class="fone" type="text" name="cpf">
+        <br>
+    </form>
+
+
+
+
+</body>
+
+</html>

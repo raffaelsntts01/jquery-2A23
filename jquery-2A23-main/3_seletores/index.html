@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução jQuery</title>
+    <!--Chamando biblioteca jQuery-->
+    <script type="text/javascript" src="jquery.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!--Funcionalidade da página-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+           //Exemplo prático de seletores
+            $("#listaOrdenadaUm").css("color", "red");
+            $(".listaOrdenadaDois").css("color", "green");
+            $("ul").css("color", "blue");
+       });
+    </script>
+</head>
+
+<body>
+    <ul id="listaOrdenadaUm">
+        <li>Link 01</li>
+        <li>Link 02</li>
+        <li>Link 03</li>
+    </ul>
+
+    <ul class="listaOrdenadaDois">
+        <li>Link 01</li>
+        <li>Link 02</li>
+        <li>Link 03</li>
+    </ul>
+
+    
+    
+
+
+</body>
+
+</html>
