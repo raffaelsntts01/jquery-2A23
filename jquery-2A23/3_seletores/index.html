@@ -4,26 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduçao Jquery</title>
-    <!-- Chamando biblioteca jQuery-->
+    <title>Introdução jQuery</title>
+    <!--Chamando biblioteca jQuery-->
     <script type="text/javascript" src="jquery.js"></script>
     <link rel="stylesheet" href="style.css">
-
-    <!-- Funcionalidades da Página-->
+    <!--Funcionalidade da página-->
     <script type="text/javascript">
-        $(document).ready(function(){
-        $("#ListaOrdenada").css("color", "red");
-    });
+        $(document).ready(function () {
+           //Exemplo prático de seletores
+            $("#listaOrdenadaUm").css("color", "red");
+            $(".listaOrdenadaDois").css("color", "green");
+            //$("ul").css("color", "blue");
+            $("h1").css("color" , "blue");
+       });
     </script>
-
 </head>
 
 <body>
-   <ul id="ListaOrdenada">  
-    <li>Link 01</li>
-    <li>Link 02</li>
-    <li>link 03</li>
+    <ul id="listaOrdenadaUm">
+        <li>Link 01</li>
+        <li>Link 02</li>
+        <li>Link 03</li>
     </ul>
+
+    <ul class="listaOrdenadaDois">
+        <li>Link 01</li>
+        <li>Link 02</li>
+        <li>Link 03</li>
+    </ul>
+
+    <h1>Texto</h1>
+    
+
+
 </body>
 
 </html>
